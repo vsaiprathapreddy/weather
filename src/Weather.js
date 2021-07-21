@@ -16,7 +16,7 @@ export default class Weather extends React.Component{
 
     componentDidMount(){
         
-        axios.get('http://api.weatherstack.com/current?access_key=27e26eb76becbb04a767d7e9f4738639&query=Hyderabad')
+        axios.get('https://api.weatherstack.com/current?access_key=27e26eb76becbb04a767d7e9f4738639&query=Hyderabad')
         .then((response) => {
             console.log(response); //{data: {}, status: 200, statusText: '}
             this.setState({
