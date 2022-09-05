@@ -16,7 +16,7 @@ export default class Weather extends React.Component{
 
     componentDidMount(){
         
-        axios.get('http://api.weatherstack.com/current?access_key=27e26eb76becbb04a767d7e9f4738639&query=Hyderabad')
+        axios.get('http://api.weatherstack.com/current?access_key=aa37b2c8d4dfa98332f65b108e3611ca&query=Hyderabad')
         .then((response) => {
             console.log(response); //{data: {}, status: 200, statusText: '}
             this.setState({
@@ -38,7 +38,7 @@ export default class Weather extends React.Component{
     onChangeCity = (event) =>{
         let city = event.target.value;
 
-        axios.get(`http://api.weatherstack.com/current?access_key=27e26eb76becbb04a767d7e9f4738639&query=${city}`)
+        axios.get(`http://api.weatherstack.com/current?access_key=aa37b2c8d4dfa98332f65b108e3611ca&query=${city}`)
         .then((response) => {
             console.log(response); //{data: {}, status: 200, statusText: '}
             this.setState({
